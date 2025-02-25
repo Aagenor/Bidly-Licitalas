@@ -3,10 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/footer.css">
+    <script src="https://kit.fontawesome.com/4e365aa7b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="rolunk.css">
     <title>Bidly - Rólunk</title>
 </head>
 <body>
-    
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/image.png" alt="Bidly Logo" id="logo">
+        </div>
+        
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Keresés...">
+          </div>
+        <!--<div class="search-bar">
+            <input type="text" placeholder="Search lots...">
+        </div>-->
+        <div class="auth-buttons">
+            <button id="btn-login">Bejelentkezés</button>
+        </div>
+    </div>
+    <div class="categories">
+            <div class="hamburger-icon" onclick="toggleDropdown()">
+                &#9776; <!-- Three-line icon -->
+            </div>
+            <div class="dropdown-menu">
+                <a href="index.html">Kezdőlap</a>
+                <a href="segitseg.html">Segítség</a>
+                <a href="gyik.html">GYIK</a>
+                <a href="rolunk.html">Rólunk</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+                <a href="sajatfiok.html">Saját Fiók</a>
+            </div>
+        
+            <div class="category">
+                <a href="#">Járművek</a>
+                <div class="dropdown">
+                    <h3>Járművek</h3>
+                    <p>Minden autó és jármű</p>
+                    <p>4WD járművek</p>
+                    <p>Autóalkatrészek</p>
+                    <p>Légiközlekedés és hajózás</p>
+                    <p>Autók</p>
+                    <p>Gyűjtői és klasszikus autók</p>
+                    <p>Motorkerékpárok</p>
+                    <p>Teherautók</p>
+                    <p>Kisbuszok és haszongépjárművek</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Divat</a>
+                <div class="dropdown">
+                    <h3>Divat</h3>
+                    <p>Férfi ruházat</p>
+                    <p>Női ruházat</p>
+                    <p>Kiegészítők</p>
+                    <p>Cipők</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Elektronika</a>
+                <div class="dropdown">
+                    <h3>Elektronika</h3>
+                    <p>Mobiltelefonok</p>
+                    <p>Laptopok</p>
+                    <p>Tabletek</p>
+                    <p>TV-k</p>
+                    <p>Hangszórók</p>
+                    <p>Egyéb</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Lakberendezés</a>
+                <div class="dropdown">
+                    <h3>Lakberendezés</h3>
+                    <p>Bútorok</p>
+                    <p>Konyhai gépek</p>
+                    <p>Dekoráció</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Ékszerek és órák</a>
+                <div class="dropdown">
+                    <h3>Ékszerek és órák</h3>
+                    <p>Férfi karórák</p>
+                    <p>Női karórák</p>
+                    <p>Gyűrűk</p>
+                    <p>Nyakláncok</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="container">
+        <!-- Képek és nevek -->
+        <div class="team-section">
+            <div class="team-member">
+                <img src="img/rolunk_ideigleneskep.jpg" alt="Roli">
+                <p class="name">Márton Roland</p>
+                <p class="role">CEO, Társalapító</p>
+            </div>
+            <div class="team-member">
+                <img src="img/rolunk_ideigleneskep.jpg" alt="Ábel">
+                <p class="name">Futó Ábel</p>
+                <p class="role">CEO, Alapító</p>
+            </div>
+            <div class="team-member">
+                <img src="img/rolunk_ideigleneskep.jpg" alt="Agenor">
+                <p class="name">Baráth Agenor</p>
+                <p class="role">Cégvezető</p>
+            </div>
+        </div>
+
+        <!-- Szöveges szekciók -->
+        <div class="text-sections">
+            <div class="text-section">
+                <h2>Rólunk</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ut. Similique corporis itaque numquam error? Vel numquam possimus, ut, inventore rerum quisquam repellat obcaecati veniam a quos mollitia enim rem?</p>
+            </div>
+            <div class="text-section">
+                <h2>Céljaink</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora maxime ut officia quam ea placeat voluptas, iste soluta praesentium assumenda ad consequatur earum? Quae quaerat blanditiis pariatur reprehenderit ipsam.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Bidly Logo">
+            </div>
+            <div class="footer-column">
+                <h3>Bidly</h3>
+                <ul>
+                    <li><a href="rolunk.html">Rólunk</a></li>
+                    <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    <li><a href="gyik.html">GYIK</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Vásárlás</h3>
+                <ul>
+                    <li><a href="#">Hogyan vásárolj</a></li>
+                    <li><a href="#">Vásárolói védelem</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Eladás</h3>
+                <ul>
+                    <li><a href="#">Hogyan adj el</a></li>
+                    <li><a href="#">Eladás Tippek</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Az én Bidlym</h3>
+                <ul>
+                    <li><a href="#">Belépés</a></li>
+                    <li><a href="#">Regisztráció</a></li>
+                    <li><a href="sajatfiok.html">Saját Fiók</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column social">
+                <h3>Kövess Minket!</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/base.js"></script>
+    <script src="footer.js"></script>
 </body>
 </html>
