@@ -4,9 +4,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="segitseg.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/4e365aa7b3.js" crossorigin="anonymous"></script>
     <title>Bidly - Segítség</title>
 </head>
 <body>
-    
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/image.png" alt="Bidly Logo" id="logo">
+        </div>
+        
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Keresés...">
+          </div>
+        <!--<div class="search-bar">
+            <input type="text" placeholder="Search lots...">
+        </div>-->
+        <div class="auth-buttons">
+            <button id="btn-login">Bejelentkezés</button>
+        </div>
+    </div>
+    <div class="categories">
+            <div class="hamburger-icon" onclick="toggleDropdown()">
+                &#9776; <!-- Three-line icon -->
+            </div>
+            <div class="dropdown-menu">
+                <a href="base.html">Kezdőlap</a>
+                <a href="segitseg.html">Segítség</a>
+                <a href="rolunk.html">Rólunk</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+                <a href="sajatfiok.html">Saját Fiók</a>
+            </div>
+        
+            <div class="category">
+                <a href="#">Járművek</a>
+                <div class="dropdown">
+                    <h3>Járművek</h3>
+                    <p>Minden autó és jármű</p>
+                    <p>4WD járművek</p>
+                    <p>Autóalkatrészek</p>
+                    <p>Légiközlekedés és hajózás</p>
+                    <p>Autók</p>
+                    <p>Gyűjtői és klasszikus autók</p>
+                    <p>Motorkerékpárok</p>
+                    <p>Teherautók</p>
+                    <p>Kisbuszok és haszongépjárművek</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Divat</a>
+                <div class="dropdown">
+                    <h3>Divat</h3>
+                    <p>Férfi ruházat</p>
+                    <p>Női ruházat</p>
+                    <p>Kiegészítők</p>
+                    <p>Cipők</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Elektronika</a>
+                <div class="dropdown">
+                    <h3>Elektronika</h3>
+                    <p>Mobiltelefonok</p>
+                    <p>Laptopok</p>
+                    <p>Tabletek</p>
+                    <p>TV-k</p>
+                    <p>Hangszórók</p>
+                    <p>Egyéb</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Lakberendezés</a>
+                <div class="dropdown">
+                    <h3>Lakberendezés</h3>
+                    <p>Bútorok</p>
+                    <p>Konyhai gépek</p>
+                    <p>Dekoráció</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Ékszerek és órák</a>
+                <div class="dropdown">
+                    <h3>Ékszerek és órák</h3>
+                    <p>Férfi karórák</p>
+                    <p>Női karórák</p>
+                    <p>Gyűrűk</p>
+                    <p>Nyakláncok</p>
+                </div>
+            </div>
+    </div>
+
+    <h1>Segítség</h1>
+    <div class="container">
+        <div class="buttons">
+            <a href="hogyanadj_el.html" class="button" style="font-size: 25px; text-align: left; font-weight: bold;">Én vagyok a vásárló <br><p style="font-size: 15px; text-align: left; margin-top: 10px; color: grey; font-weight: normal;">Segítséget kaphat a tételekkel, a szállítási státusszal, a megrendelésével és még sok mással kapcsolatban.</p></a>
+            <a href="hogyan_vasarolj.html" class="button" style="font-size: 25px; text-align: left; font-weight: bold;">Én vagyok az eladó <br><p style="font-size: 15px; text-align: left; margin-top: 10px; color: grey; font-weight: normal;">Segítséget kaphat a benyújtott tételekkel, a fizetéssel, a becslésekkel és egyebekkel kapcsolatban.</p></a>
+        </div>
+        
+        <h2>Gyakran feltett kérdések</h2>
+        <div class="faq-container">
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 1 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 1</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 2 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 2</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 3 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 3</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 4 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 4</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 5 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 5</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 6 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 6</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 7 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 7</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 8 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 8</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 9 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 9</div>
+            </div>
+            <div class="faq" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <img src="img/lampicon.webp" alt="Lamp Icon">kerdes 10 <span>▼</span>
+                </div>
+                <div class="faq-answer">valasz 10</div>
+            </div>
+        </div>
+    </div>
+
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Bidly Logo">
+        </div>
+        <div class="footer-column">
+            <h3>Bidly</h3>
+            <ul>
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="gyik.html">GYIK</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Vásárlás</h3>
+            <ul>
+                <li><a href="#">Hogyan vásárolj</a></li>
+                <li><a href="#">Vásárolói védelem</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Eladás</h3>
+            <ul>
+                <li><a href="#">Hogyan adj el</a></li>
+                <li><a href="#">Eladás Tippek</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Az én Bidlym</h3>
+            <ul>
+                <li><a href="#">Belépés</a></li>
+                <li><a href="#">Regisztráció</a></li>
+                <li><a href="sajatfiok.html">Saját Fiók</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column social">
+            <h3>Kövess Minket!</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/base.js"></script>
+<script src="footer.js"></script>
+<script src="segitseg.js"></script>
 </body>
 </html>
