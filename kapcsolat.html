@@ -4,9 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="kapcsolat.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/4e365aa7b3.js" crossorigin="anonymous"></script>
     <title>Bidly - Kapcsolat</title>
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/image.png" alt="Bidly Logo" id="logo">
+        </div>
+        
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Keresés...">
+          </div>
+        <!--<div class="search-bar">
+            <input type="text" placeholder="Search lots...">
+        </div>-->
+        <div class="auth-buttons">
+            <button id="btn-login">Bejelentkezés</button>
+        </div>
+    </div>
+    <div class="categories">
+            <div class="hamburger-icon" onclick="toggleDropdown()">
+                &#9776; <!-- Three-line icon -->
+            </div>
+            <div class="dropdown-menu">
+                <a href="base.html">Kezdőlap</a>
+                <a href="segitseg.html">Segítség</a>
+                <a href="rolunk.html">Rólunk</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+                <a href="sajatfiok.html">Saját Fiók</a>
+            </div>
+        
+            <div class="category">
+                <a href="#">Járművek</a>
+                <div class="dropdown">
+                    <h3>Járművek</h3>
+                    <p>Minden autó és jármű</p>
+                    <p>4WD járművek</p>
+                    <p>Autóalkatrészek</p>
+                    <p>Légiközlekedés és hajózás</p>
+                    <p>Autók</p>
+                    <p>Gyűjtői és klasszikus autók</p>
+                    <p>Motorkerékpárok</p>
+                    <p>Teherautók</p>
+                    <p>Kisbuszok és haszongépjárművek</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Divat</a>
+                <div class="dropdown">
+                    <h3>Divat</h3>
+                    <p>Férfi ruházat</p>
+                    <p>Női ruházat</p>
+                    <p>Kiegészítők</p>
+                    <p>Cipők</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Elektronika</a>
+                <div class="dropdown">
+                    <h3>Elektronika</h3>
+                    <p>Mobiltelefonok</p>
+                    <p>Laptopok</p>
+                    <p>Tabletek</p>
+                    <p>TV-k</p>
+                    <p>Hangszórók</p>
+                    <p>Egyéb</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Lakberendezés</a>
+                <div class="dropdown">
+                    <h3>Lakberendezés</h3>
+                    <p>Bútorok</p>
+                    <p>Konyhai gépek</p>
+                    <p>Dekoráció</p>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#">Ékszerek és órák</a>
+                <div class="dropdown">
+                    <h3>Ékszerek és órák</h3>
+                    <p>Férfi karórák</p>
+                    <p>Női karórák</p>
+                    <p>Gyűrűk</p>
+                    <p>Nyakláncok</p>
+                </div>
+            </div>
+    </div>
+
+    <body class="bg-gray-100">
+        <section class="relative w-full h-80 flex items-center justify-center">
+            <div class="p-8 text-center">
+            <h1 class="text-4xl font-bold text-black" style="margin-top: -70px; font-size: 50px;">Kapcsolatfelvétel</h1>
+            <p class="mt-2 text-lg text-black">Legyen bármilyen kérdése vagy kérése mi mindig rendelkezésére állunk.</p>
+            </div>
+        </section>
     
+        <section class="max-w-6xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-8" style="margin-top: -100px;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Írj nekünk üzenetet</h2>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Név" class="w-full p-3 border rounded-lg">
+                        <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg">
+                        <textarea placeholder="Üzenet..." class="w-full p-3 border rounded-lg h-32"></textarea>
+                        <button class="bg-orange-300 text-white px-6 py-3 rounded-lg hover:bg-orange-400">Küldés</button>
+                    </form>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4 mt-32">Kontakt Infomáció</h2>
+                    <p><strong>Cím:</strong> 123 Auction St, New York, NY 10001</p>
+                    <p><strong>Telefonszám:</strong> (123) 456-7890</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="max-w-6xl mx-auto mt-8 p-8 bg-white shadow-lg rounded-lg">
+            <h2 class="text-2xl font-semibold mb-4">Amit ügyfeleink mondanak</h2>
+            <div class="space-y-6">
+                <div class="p-4 border rounded-lg">
+                    <p class="text-gray-700">"A legjobb licitálási platform, amit valaha használtam. Nagyszerű ügyfélszolgálat és könnyű használat!"</p>
+                    <p class="mt-2 text-right font-semibold">- Pataki Benedek</p>
+                </div>
+                <div class="p-4 border rounded-lg">
+                    <p class="text-gray-700">"Gyors válaszok és kiváló szolgáltatás. Kiemelten ajánlom!"</p>
+                    <p class="mt-2 text-right font-semibold">- Lengyel Kincső</p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Bidly Logo">
+                </div>
+                <div class="footer-column">
+                    <h3>Bidly</h3>
+                    <ul>
+                        <li><a href="rolunk.html">Rólunk</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                        <li><a href="gyik.html">GYIK</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Vásárlás</h3>
+                    <ul>
+                        <li><a href="#">Hogyan vásárolj</a></li>
+                        <li><a href="#">Vásárolói védelem</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>Eladás</h3>
+                    <ul>
+                        <li><a href="#">Hogyan adj el</a></li>
+                        <li><a href="#">Eladás Tippek</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>Az én Bidlym</h3>
+                    <ul>
+                        <li><a href="#">Belépés</a></li>
+                        <li><a href="#">Regisztráció</a></li>
+                        <li><a href="sajatfiok.html">Saját Fiók</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column social">
+                    <h3>Kövess Minket!</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/base.js"></script>
+        <script src="footer.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
