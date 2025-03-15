@@ -1,4 +1,5 @@
 .trending{
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -39,4 +40,88 @@
 }
 .availability{
     margin-top: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: url('auction-banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.auctions, .features, .more-auctions, .about-us {
+    padding: 40px;
+    text-align: center;
+}
+
+.auction-item {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.cta {
+    text-align: center;
+    margin: 40px;
+}
+
+.cta button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 200px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-md-4 {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.col-md-4 i {
+    color: black;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    max-width: 300px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
 }
