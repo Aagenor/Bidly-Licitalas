@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/base.css">
     <link rel="stylesheet" href="/frontpage/index.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/card.css">
     <script src="https://kit.fontawesome.com/4e365aa7b3.js" crossorigin="anonymous"></script>
     <title>Bidly - Kezdőlap</title>
 </head>
@@ -44,104 +44,28 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="category">
-                <a style="color: white;" href="#"><i class="fas fa-gavel"></i> Népszerű</a>
-            </div>
         
             <div class="category">
-                <a href="#"><i class="fas fa-car"></i> Járművek</a>
-                <div class="dropdown">
-                    <h3>Járművek</h3>
-                    <p>Minden autó és jármű</p>
-                    <p>4WD járművek</p>
-                    <p>Autóalkatrészek</p>
-                    <p>Légiközlekedés és hajózás</p>
-                    <p>Autók</p>
-                    <p>Gyűjtői és klasszikus autók</p>
-                    <p>Motorkerékpárok</p>
-                    <p>Teherautók</p>
-                    <p>Kisbuszok és haszongépjárművek</p>
-                </div>
+                <a href="/products/Vehicles"><span class="fa-solid fa-car"></span> Járművek</a>
             </div>
             <div class="category">
-                <a href="#"><i class="fas fa-tshirt"></i> Divat</a>
-                <div class="dropdown">
-                    <h3>Divat</h3>
-                    <p>Férfi ruházat</p>
-                    <p>Női ruházat</p>
-                    <p>Kiegészítők</p>
-                    <p>Cipők</p>
-                </div>
+                <a href="/products/Clothing"><span class="fa-solid fa-shirt"></span> Ruházat</a>
             </div>
             <div class="category">
-                <a href="#"><i class="fas fa-mobile-alt"></i> Elektronika</a>
-                <div class="dropdown">
-                    <h3>Elektronika</h3>
-                    <p>Mobiltelefonok</p>
-                    <p>Laptopok</p>
-                    <p>Tabletek</p>
-                    <p>TV-k</p>
-                    <p>Hangszórók</p>
-                    <p>Egyéb</p>
-                </div>
+                <a href="/products/Electronics"><span class="fa-solid fa-power-off"></span> Elektronika</a>
             </div>
             <div class="category">
-                <a href="#"><i class="fas fa-couch"></i> Lakberendezés</a>
-                <div class="dropdown">
-                    <h3>Lakberendezés</h3>
-                    <p>Bútorok</p>
-                    <p>Konyhai gépek</p>
-                    <p>Dekoráció</p>
-                </div>
+                <a href="/products/Furniture"><span class="fa-solid fa-house"></span> Lakberendezés</a>
             </div>
             <div class="category">
-                <a href="#"><i class="fas fa-gem"></i> Ékszerek és órák</a>
-                <div class="dropdown">
-                    <h3>Ékszerek és órák</h3>
-                    <p>Férfi karórák</p>
-                    <p>Női karórák</p>
-                    <p>Gyűrűk</p>
-                    <p>Nyakláncok</p>
-                </div>
+                <a href="/products/Jewelry"><span class="fa-solid fa-ring"></span> Ékszerek és órák</a>
             </div>
     </div>
     
     <div class="trending">
-        <h1>Népszerű termékek</h1>
-        <div class="products-container"></div>
+        <h1>Népszerű termékek <span ><img src="/img/crownLogo.png" alt="crown"id="crownLogo"></span></h1>
+        <div id="product-cards-container"></div>
     </div>
-
-    <h2 style="text-align: center; margin-bottom: 20px; margin-top: 50px;">Ikonikus Márkák</h2>
-    <div class="container3">
-        <div class="brand"><img src="img/apple.png" alt="Apple"></div>
-        <div class="brand"><img src="img/rolex.png" alt="Rolex"></div>
-        <div class="brand"><img src="img/lego.png" alt="LEGO"></div>
-        <div class="brand"><img src="img/hermes.png" alt="Hermès"></div>
-        <div class="brand"><img src="img/samsung.png" alt="Samsung"></div>
-        <div class="brand"><img src="img/xiaomi.png" alt="Xiaomi"></div>
-        <div class="brand"><img src="img/omega.png" alt="Omega"></div>
-        <div class="brand"><img src="img/zara.png" alt="Zara"></div>
-        <div class="brand"><img src="img/primark.png" alt="Primark"></div>
-        <div class="brand"><img src="img/cartier.png" alt="Cartier"></div>
-        <div class="brand"><img src="img/nikon.png" alt="Nikon"></div>
-        <div class="brand"><img src="img/ikea.png" alt="Ikea"></div>
-    </div>
-    
-    <div class="auctions">
-        <h2>Kiemelt Aukciók</h2>
-        <div class="auction-item">
-            <img src="item1.jpg" alt="Termék 1" width="200">
-            <h3>Termék 1</h3>
-            <p>Jelenlegi licit: 10 000 Ft</p>
-        </div>
-        <div class="auction-item">
-            <img src="item2.jpg" alt="Termék 2" width="200">
-            <h3>Termék 2</h3>
-            <p>Jelenlegi licit: 15 000 Ft</p>
-        </div>
-    </div>
-
     <div class="container mt-5 mb-5">
         <div class="row text-center">
             <div class="col-md-4">
@@ -161,37 +85,21 @@
             </div>
         </div>
     </div>
-    
-    <div class="more-auctions">
-        <h2>További Aukciók</h2>
-        <div class="auction-list">
-            <div class="auction-item">
-                <img src="item3.jpg" alt="Termék 3" width="200">
-                <h3>Termék 3</h3>
-                <p>Jelenlegi licit: 8 500 Ft</p>
-            </div>
-            <div class="auction-item">
-                <img src="item4.jpg" alt="Termék 4" width="200">
-                <h3>Termék 4</h3>
-                <p>Jelenlegi licit: 12 000 Ft</p>
-            </div>
-            <div class="auction-item">
-                <img src="item5.jpg" alt="Termék 5" width="200">
-                <h3>Termék 5</h3>
-                <p>Jelenlegi licit: 20 000 Ft</p>
-            </div>
-            <div class="auction-item">
-                <img src="item6.jpg" alt="Termék 6" width="200">
-                <h3>Termék 6</h3>
-                <p>Jelenlegi licit: 5 000 Ft</p>
-            </div>
-        </div>
+    <h2 style="text-align: center; margin-bottom: 20px; margin-top: 50px;">Ikonikus Márkák</h2>
+    <div class="container3">
+        <div class="brand"><img src="/img/brands/apple.png" alt="Apple" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/rolex.png" alt="Rolex" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/lego.png" alt="LEGO" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/hermes.png" alt="Hermès" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/samsung.png" alt="Samsung" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/xiaomi.png" alt="Xiaomi" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/omega.png" alt="Omega" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/zara.png" alt="Zara" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/primark.png" alt="Primark" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/cartier.png" alt="Cartier" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/nikon.png" alt="Nikon" class="brandImg"></div>
+        <div class="brand"><img src="/img/brands/ikea.png" alt="Ikea" class="brandImg"></div>
     </div>
-    
-    <div class="cta">
-        <button>Kezdj licitálni most!</button>
-    </div>
-    
 
     <footer id="footer">
         <div class="footer-container">
@@ -242,6 +150,7 @@
         </div>
     </footer>
     <script src="/base.js"></script>
+    <script src="/frontpage/index.js"></script>
     <script src="/footer.js"></script>
     <script src="/product.js"></script>
 
